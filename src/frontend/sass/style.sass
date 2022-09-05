@@ -1,0 +1,80 @@
+$bordercolor: #d0d0d0
+
+*
+  padding: 0
+  margin: 0
+  font-family: Tahoma
+
+body
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+
+h1
+  font-weight: 400
+
+header
+  width: 100%
+  padding: 30px 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-bottom: 1px solid $bordercolor
+
+footer
+    width: 100%
+    padding: 30px 0px
+    border-top: 1px solid $bordercolor
+    text-align: center
+
+button
+  padding: 5px 15px
+
+section
+  min-height: 700px
+
+.hide_info
+  display: none
+
+.error
+  font-style: italic
+  color: red
+  margin-left: 20px
+
+.product
+  min-height: 240px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &-info
+    position: relative
+    height: 210px
+    width: 260px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 2px solid $bordercolor
+
+    &__description
+      text-align: center
+
+  &-switcher__title
+    margin: 40px 0px
+    min-width: 150px
+
+  &-information__title, &-information__description
+    margin: 15px 0px
+    min-width: 100px
+
+  &-information__title, &-switcher__title, &-information__input
+    display: inline-block
+
+.header-title, .delete-product-button, .cancel-product-button, .product-add-section
+  margin: 0px 25px
+
+.delete-checkbox
+  position: absolute
+  top: 10px
+  left: 10px
