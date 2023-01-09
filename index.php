@@ -4,4 +4,4 @@
     $db = new Database;
     $db->getAll();
 
-    include 'src/frontend/view/productList.php';
+    include 'src/frontend/view/productlist.php';
